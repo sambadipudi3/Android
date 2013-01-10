@@ -1,0 +1,243 @@
+@CHARSET "ISO-8859-1";
+body {
+	margin: 0px;
+}
+.clear { clear: both;}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Header */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#header-container{
+	position:relative;
+	background-color:black;
+	width:100%;
+}
+	#header-logo {
+		float:left;
+	}
+	#header-login{
+		position: absolute;
+		bottom:40%;
+		text-align:right;
+		right:10%;
+	}
+	
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Navigation Bar */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#container {
+	padding-bottom: 0;
+	background-color:#404040;
+	height:40px;
+	padding:5px;
+}
+
+	#container header {
+		
+	}
+	
+	#container header nav {
+		clear: both;
+		margin-top: -1px;
+		width: auto;
+		border: solid 1px rgba(0,0,0,0.2);
+		border-radius: 10px 10px 0 0;
+	}
+	
+	#container header nav ul {
+		line-height: auto;
+		margin: 0;
+		padding: 8px 0 8px 10px;
+		height: 100%;
+		float: left;
+		display: block;
+		border: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		width: 70%;
+		font-size: 13px;
+	}
+	
+	#container header nav ul li {
+		margin: 0;
+		padding: 5px 0;
+		float: left;
+		display: block;
+		border: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	
+	#container header nav ul li a {
+		line-height: 31px;
+		padding: 7px 11px;
+		margin: 0 10px 0 0;
+		line-height: 100%;
+		height: 100%;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: 'Gill Sans MT', 'GillSans MT', 'Gill Sans', GillSans, Arial, Helvetica, sans-serif;
+		text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 1px;
+	}
+	
+	#container header nav ul li:hover, #container header nav ul li:hover a { background: none; }
+	
+	#container header nav ul li a:hover, #container header nav ul li.active a, #container header nav ul li.current-menu-item a {
+		background: none;
+		-webkit-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
+		box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
+		border-radius: 4px;
+		padding: 6px 10px;
+		border: 1px solid rgba(0,0,0,0.25);
+		color: #fff;
+		text-shadow: rgba(0, 0, 0, 0.796875) 0px -1px 0px, rgba(255, 255, 255, 0.296875) 0px 0px 10px;
+	}
+	#container #body .inner { padding: 2%; }
+	
+	#container header nav {
+		-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0,
+			rgba(0,0,0,0.2) 0 -1px 0,
+			inset rgba(137,81,6,0.5) 0 -3px 5px;
+		box-shadow: rgba(255,255,255,0.1) 0 1px 0,
+			rgba(0,0,0,0.2) 0 -1px 0,
+			inset rgba(137,81,6,0.5) 0 -3px 5px;
+	}
+	
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Slideshow */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+* {
+margin : 0;
+padding : 0;
+}
+	html {
+	height : 100%;
+	}
+	body {
+	height : 100%;
+	color : #a4a4a4;
+	cursor : default;
+	font-size : 11px;
+	line-height : 16px;
+	text-align : center;
+	background-color : #000;
+	background-position : 50% 0;
+	background-repeat : no-repeat;
+	font-family : Tahoma, sans-serif;
+	}
+	a:link, a:visited {
+	color : #fff;
+	text-decoration : none;
+	}
+	a img {
+	border : 0;
+	}
+	div.wrap {
+	width : 993px;
+	margin : 0 auto;
+	text-align : left;
+	}
+	div#top div#nav {
+	float : left;
+	clear : both;
+	width : 993px;
+	height : 52px;
+	margin : 22px 0 0;
+	}
+	div#top div#nav ul {
+	float : left;
+	width : 700px;
+	height : 52px;
+	list-style-type : none;
+	}
+	div#nav ul li {
+	float : left;
+	height : 52px;
+	}
+	div#nav ul li a {
+	border : 0;
+	height : 52px;
+	display : block;
+	line-height : 52px;
+	text-indent : -9999px;
+	}
+	div#slideshow {
+	margin : -1px 0 0;
+	}
+	div#video-header {
+	height : 683px;
+	margin : -1px 0 0;
+	}
+	div#slideshow div.wrap {
+	height : 299px;
+	background : url(images/slideshow/header-bg.png) no-repeat 50% 0;
+	}
+	div#slideshow div#slide-holder {
+	z-index : 40;
+	width : 993px;
+	height : 299px;
+	position : absolute;
+	}
+	div#slideshow div#slide-holder div#slide-runner {
+	top : 9px;
+	left : 9px;
+	width : 973px;
+	height : 278px;
+	overflow : hidden;
+	position : absolute;
+	}
+	div#slideshow div#slide-holder img {
+	margin : 0;
+	display : none;
+	position : absolute;
+	}
+	div#slideshow div#slide-holder div#slide-controls {
+	left : 0;
+	bottom : 228px;
+	width : 973px;
+	height : 46px;
+	display : none;
+	position : absolute;
+	background-color:black;
+	}
+	div#slideshow div#slide-holder div#slide-controls p.text {
+	float : left;
+	color : #fff;
+	display : inline;
+	font-size : 10px;
+	line-height : 16px;
+	margin : 15px 0 0 20px;
+	text-transform : uppercase;
+	}
+	div#slideshow div#slide-holder div#slide-controls p#slide-nav {
+	float : right;
+	height : 24px;
+	display : inline;
+	margin : 11px 15px 0 0;
+	}
+	div#slideshow div#slide-holder div#slide-controls p#slide-nav a {
+	float : left;
+	width : 24px;
+	height : 24px;
+	display : inline;
+	font-size : 11px;
+	margin : 0 5px 0 0;
+	line-height : 24px;
+	font-weight : bold;
+	text-align : center;
+	text-decoration : none;
+	background-position : 0 0;
+	background-repeat : no-repeat;
+	}
+	div#slideshow div#slide-holder div#slide-controls p#slide-nav a.on {
+	background-position : 0 -24px;
+	}
+	div#slideshow div#slide-holder div#slide-controls p#slide-nav a {
+	background-image : url(images/slideshow/slide-nav.png);
+	}
+	div#nav ul li a {
+	background : url(images/slideshow/nav.png) no-repeat;
+	}
